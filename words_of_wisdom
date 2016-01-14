@@ -52,3 +52,8 @@ New in 3.8: def.json parsed in C, **before** any policy evaluation
 Changed in 3.8: `sys.libdir` and `sys.local_libdir` no longer include the version, because @if is now available
 Changed in 3.8 and 3.7.2: cf-agent, cf-execd, cf-promises, cf-runagent and cf-serverd honor multiple -D, -N and -s arguments
 Changed in 3.8: the JSON parser now supports unquoted strings as keys e.g. { mykey: 123 }
+New in 3.9: namespaced classes can be specified on the command line
+New in 3.9: mapdata("canonify", "$(this)", mycontainer_or_list) canonifies a container or list https://docs.cfengine.com/docs/master/reference-functions-mapdata.html
+New in 3.9: processexists() and findprocesses() functions
+New in 3.9: regex_replace() function to do PCRE search and replace https://docs.cfengine.com/docs/master/reference-functions-regex_replace.html
+Changed in 3.9: returnszero() no longer outputs the output of a command (use -I to see it)
